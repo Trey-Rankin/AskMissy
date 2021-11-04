@@ -1,0 +1,121 @@
+<!DOCTYPE>
+<html xmlns=”https://www.w3.org/1999/xhtml” lang=”en”>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+  <title>Deliverables</title>
+<style>
+
+.collapsible {
+  background-color: #ffe3e3;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #f5bcbc;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color:lightblue;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+  padding: 0 9px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+transition: max-height 0.2s ease-out;
+}
+
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+</style>
+  </head>
+<body>    
+<div class="topnav">
+<div class="nav-center">
+<a href="index.html">Home</a> 
+<a href="bios.html">Meet the Team</a> 
+<a href="theProblem.html">The Problem</a> 
+<a href="stakeholder.html">Stakeholder</a> 
+<a href="deliverables.html">Deliverables</a> 
+<a href="presentation.html">Presentations</a> 
+<a href="references.html">References</a>
+<a href="glossary.html">Glossary</a>
+</div>
+</div>
+
+
+
+<h1>Deliverables</h1>
+
+<button type="button" class="collapsible"><h3>User Stories Version 2</h3></button>
+<div class="content">
+<img src="images/user_stories_2_guests_students.PNG" alt="Competition Matrix" style="width:40%;">
+<div></div>
+<img src="images/user_stories_2_teacher_librarian_admin.PNG" alt="Competition Matrix" style="width:40%;">
+</div>
+<div></div>
+
+<button type="button" class="collapsible"><h3>Work Breakdown Structure</h3></button>
+<div class="content">
+<img src="images/WBS.png" alt="Work Breakdown Structure" style="width:40%;">
+</div>
+<div></div>
+
+<button type="button" class="collapsible"><h3>Work Breakdown Structure: Algorithm feedback</h3></button>
+<div class="content">
+<img src="images/WBS_ Algorithms_Feedback.png" alt="Algorithms: feedback" style="width:40%;">
+</div>
+<div></div>
+
+<button type="button" class="collapsible"><h3>Work Breakdown Structure: Algorithms Profile Creation</h3></button>
+<div class="content">
+<img src="images/WBS_ Algorithms_Profile_Creation.png" alt="Algorithms: profile creation" style="width:40%;">
+</div>
+<div></div>
+
+
+<button type="button" class="collapsible"><h3>Competition Matrix</h3></button>
+<div class="content">
+<img src="comp_matrix.png" alt="Competition Matrix" class="center">
+<p class="center">(ref. 8, 9, 10, 11)</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+</body>
