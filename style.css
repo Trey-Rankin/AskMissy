@@ -15,6 +15,22 @@ h3 {
     color: #E57373;
 }
 
+body {
+background-image: url("images/backdrop.PNG");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;
+}
+
+.divone {
+width: 30%;
+padding: 10px;
+border-style: solid;
+border-color: black;
+background-color: white;
+}
+
+
 .center {
     display: block;
     margin-left: auto;
