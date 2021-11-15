@@ -160,10 +160,14 @@ background-color: white;
     animation-duration: 1.5s;
 }
 
-.wrapper {
+.grid {
   display: grid;
-  grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr;
+  grid-template-columns: auto, auto;
+
+  grid-column-gap: 10px;
+  gird-row-gap: 30px;
+
+
 }
 
 @-webkit-keyframes fade {
