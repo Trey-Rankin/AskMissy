@@ -5,7 +5,7 @@ h1 {
 
 h2 {
    font-family "Cambodian",cambodian;
-   text-align: center;
+   text-align: left;
    color: #E57373;
 }
 
@@ -52,7 +52,7 @@ background-color: white;
 	background-color: #E57373;
 	overflow: hidden;
 	text-align: middle;
-	height: 50px;	
+	height: 50px;
 }
 
 .topnav a:hover {
@@ -158,6 +158,19 @@ background-color: white;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  background-color: pink;
+  background-image: url("images/Crane.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cell {
 }
 
 @-webkit-keyframes fade {
