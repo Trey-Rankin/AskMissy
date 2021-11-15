@@ -5,7 +5,7 @@ h1 {
 
 h2 {
    font-family "Cambodian",cambodian;
-   text-align: center;
+   text-align: left;
    color: #E57373;
 }
 
@@ -162,12 +162,15 @@ background-color: white;
 
 .grid {
   display: grid;
-  grid-template-columns: auto, auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  background-color: pink;
+  background-image: url("images/Crane.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  grid-column-gap: 10px;
-  gird-row-gap: 30px;
-
-
+.cell {
 }
 
 @-webkit-keyframes fade {
