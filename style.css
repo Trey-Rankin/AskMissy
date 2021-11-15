@@ -170,9 +170,6 @@ background-color: white;
   background-size: cover;
 }
 
-.cell {
-}
-
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
