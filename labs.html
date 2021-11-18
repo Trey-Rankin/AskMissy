@@ -1,0 +1,121 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Labs</title>
+<style>
+
+body {
+background-image: url("images/backdrop.PNG");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;
+}
+
+.divone {
+width: 60%;
+padding: 10px;
+border-style: solid;
+border-color: black;
+background-color: white;
+font-size: large;
+}
+
+p.a {
+font-style: italic;
+font-size: large;
+color: red;
+font-weight: bold;
+}
+
+.collapsible {
+  background-color: #ffe3e3;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+}
+
+.active, .collapsible:hover {
+  background-color: #f5bcbc;
+}
+
+.collapsible:after {
+    content: '\002B';
+    color:lightblue;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+  padding: 0 9px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+transition: max-height 0.2s ease-out;
+}
+
+
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+</style>
+</head>
+  <body>
+
+
+    <div class="topnav">
+      <div class="nav-center">
+	<a href="index.html">Home</a>
+	<a href="bios.html">Meet The Team</a>
+	<a href="theProblem.html">The Problem</a>
+	<a href="stakeholder.html">Stakeholder</a>
+	<a href="deliverables.html">Deliverables</a>
+	<a href="presentation.html">Presentations</a>
+  <a href="labs.html">Labs</a>
+	<a href="references.html">References</a>
+	<a href="glossary.html">Glossary</a>
+      </div>
+    </div>
+
+    <h1 style = "font-size: 5vw;">Labs</h1>
+
+    <button type="button" class="collapsible"><h3>Lab Collaborative Outline</h3></button>
+    <div class="content">
+      <center>
+      <iframe src="https://docs.google.com/document/d/e/2PACX-1vQwDzhl4eZMQBhU95tLPU2Pwzyzh29u2N-v4kr4ZVhSPS7G2lOj9GZT3e9NHSsPf-EpULiazRTZS3K6/pub?embedded=true" style="width:50%; height:70%"></iframe>
+      </center>
+    </div>
+    <div></div>
+
+
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+</body>
