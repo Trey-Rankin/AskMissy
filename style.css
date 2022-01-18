@@ -53,6 +53,7 @@ background-color: white;
 	overflow: hidden;
 	text-align: middle;
 	height: 50px;
+  border-radius: 10px;
 }
 
 .topnav a:hover {
@@ -69,6 +70,8 @@ background-color: white;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 18px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
 }
 * {box-sizing:border-box}
 
