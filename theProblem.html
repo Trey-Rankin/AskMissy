@@ -19,29 +19,108 @@
       	<a href="glossary.html">Glossary</a>
       </div>
     </div>
+
+    <style>
+
+    .collapsible {
+      background-color: #ffe3e3;
+      color: white;
+      cursor: pointer;
+      padding: 5px;
+      width: 100%;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 12px;
+    }
+
+    .active, .collapsible:hover {
+      background-color: #f5bcbc;
+    }
+
+    .collapsible:after {
+        content: '\002B';
+        color:lightblue;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+    .active:after {
+        content: "\2212";
+    }
+
+    .content {
+      padding: 0 9px;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    transition: max-height 0.2s ease-out;
+    }
+
+/*
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    } */
+
+
+    </style>
   </head>
 
 <body>
 <h1>The Problem</h1>
-<h2>Students are suffering from a lack of personalized study material.</h3>
-<p>Over the COVID-19 pandemic student SOL Score have dropped across the board, and this is evident in math and english scores.</p>
-<img sytle="text-align: left;" src="images/math_graph.png" alt="Math Scores" width="49%">
-<img style="text-align: right;"src="images/reading_graph.png" alt"English Scores" width="49%">
-<h3>How are they Suffering?</h3>
-<ul>
-	<li>Students find it difficult to find resouces that work well with thier learning style</li>
-	<li>Students have too many options when it comes to finding resources - there needs to be a way of narrowing down resources to fit the needs of the student. (specifically designed around you and your personal preferences)</li>
 
-</ul>
-<h3>Why are they Suffering?</h3>
+<center><h3>Students are suffering from a lack of personalized study material.</h3></center>
+<div style="background-color:white;width:50%;margin:auto;border:1px solid black">
+<p>Over the COVID-19 pandemic student SOL Score have dropped across the board, and this is evident in math and english scores.</p>
+</div>
+<button type="button" class="collapsible"><h3>SOL scores</h3></button>
+<div class="content">
+
+<img style="text-align: left;" src="images/math_graph.png" alt="Math Scores" width="48%">
+<img style="text-align: right;" src="images/reading_graph.png" alt"English Scores" width="48%">
+
+</div>
+
+
+<h3>How are they Suffering?</h3>
+<div style="background-color:white;width:50%;margin:auto;border:1px solid black">
 <ul>
-	<li>Some students may not have good teachers and tutors to guide them to find resources</li>
-	<li>Students are not aware of where they can find physical copies of resources</li>
-	<li>Students may not be aware of what kind of learning style they have</li>
+	<li>Students find it difficult to find resouces that work well with their learning style.</li>
+	<li>Students have too many options when it comes to finding resources - there needs to be a way of narrowing down resources to fit the needs of the student (specifically designed around you and your personal preferences).</li>
 </ul>
+</div>
+<h3>Why are they Suffering?</h3>
+<div style="background-color:white;width:35%;margin:auto;border:1px solid black">
+<ul>
+	<li>Some students may not have good teachers and tutors to guide them to find resources.</li>
+	<li>Students are not aware of where they can find physical copies of resources.</li>
+	<li>Students may not be aware of what kind of learning style they have.</li>
+</ul>
+</div>
 <h3>What is cost?</h3>
-<p>An inefficient or outdated resource search engine could lead to inaccurate results or a student may waste time using multiple searches to get a result. If a reader does find a resource but realizes it doesn't fit their learning style or preferences upon already reading it, they may feel unmotivated to learn. Money is a concern to those who buy hardcopy books or E-books where they are nonrefundable. So AskMissy seeks to connect students with existing resources at their local libraries.
+<div style="background-color:white;width:50%;margin:auto;border:1px solid black">
+<p> &emsp; An inefficient or outdated resource search engine could lead to inaccurate results or a student may waste time using multiple searches to get a result. If a reader does find a resource but realizes it doesn't fit their learning style or preferences upon already reading it, they may feel unmotivated to learn. Money is a concern to those who buy hardcopy books or E-books where they are nonrefundable. So AskMissy seeks to connect students with existing resources at their local libraries.
 </p>
+</div>
 
 </body>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </html>
